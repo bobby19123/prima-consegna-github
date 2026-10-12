@@ -1,20 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>5 ITIA C - TPSIT - Esercitazione 01</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+        input[type="number"] {
+            padding: 5px;
+            width: 150px;
+        }
+        .buttons {
+            margin-top: 20px;
+            margin-left: 150px;
+        }
+        input[type="submit"], input[type="reset"] {
+            padding: 8px 15px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    
-<form>
 
-    <div>
+    <h2>5 ITIA C - TPSIT - Esercitazione 01</h2>
+    <p>Inserisci la BASE e l'ALTEZZA del rettangolo per calcolarne il perimetro, l'area e la diagonale.</p>
 
+    <form action="calcolo.php" method="POST">
+        <div class="form-group">
+            <label for="base">Inserire base</label>
+            <input type="number" step="any" id="base" name="base" required>
+        </div>
         
-    </div>
-</form>
+        <div class="form-group">
+            <label for="altezza">Inserire altezza</label>
+            <input type="number" step="any" id="altezza" name="altezza" required>
+        </div>
 
+        <div class="buttons">
+            <input type="submit" value="Invia valori">
+            <input type="reset" value="Cancella valori">
+        </div>
+    </form>
 
 </body>
 </html>
