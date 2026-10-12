@@ -1,0 +1,1 @@
+# esercitazione del 12/10/2026
